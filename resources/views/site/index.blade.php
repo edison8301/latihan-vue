@@ -5,11 +5,11 @@
 @section('content')
 
 
-
     <div id="app">
         <div>
-        @{{ message }} @{{ nama }}<br/>
-
+            @{{ message }} @{{ nama }}
+        </div>
+        <div>
             Imperaetive <div id="div-nama"></div>
         </div>
 
@@ -39,16 +39,11 @@
 
         </div>
 
-        <v-btn color="primary">Tes</v-btn>
-
-        <daftar-lampiran></daftar-lampiran>
-
-        <example-component></example-component>
 
 
     </div>
 
-    <?php /*
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <script>
@@ -86,9 +81,7 @@
 
 
     </script>
-    */ ?>
 
-    <script src="{{ asset('/js/app.js') }}" type="text/javascript"></script>
 
 
 
