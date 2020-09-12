@@ -31,7 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
-        var app = new Vue({
+        let app = new Vue({
             el: '#app',
             data: {
                 message: 'Hello World',
@@ -44,7 +44,7 @@
                     app.arrayBuku = response.data;
                 });
                 */
-                axios.get("<?= url('/api/buku'); ?>").then((response) => {
+                axios.get("<?= url('/api/buku'); ?>").then(response => {
                     console.log(response.data);
                     this.arrayBuku = response.data;
                 });
