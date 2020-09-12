@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('/buku','BukuController@index');
+Route::get('/buku/index','BukuController@index');
 Route::get('/site/index','SiteController@index');

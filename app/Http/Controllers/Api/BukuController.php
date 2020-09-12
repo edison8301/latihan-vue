@@ -13,6 +13,10 @@ class BukuController extends Controller
     {
         $query = Buku::query();
 
+        $query->with('kategori');
+        $query->with('penulis');
+        $query->with('penerbit');
+
         if($request->get('id_kategori') != null) {
             $query->where('id_kategori', $request->get('id_kategori'));
         }

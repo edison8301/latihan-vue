@@ -19,4 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/buku','Api\BukuController@index');
+Route::post('/buku','Api\BukuController@create');
 Route::get('/buku/{id}','Api\BukuController@read');
+Route::patch('/buku/{id}', 'Api\BukuController@update');
+Route::delete('/buku/{id}','Api\BukuController@delete');
